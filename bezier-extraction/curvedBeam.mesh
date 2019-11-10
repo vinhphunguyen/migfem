@@ -1,0 +1,37 @@
+<Nodes>
+  1 0 0.0000;
+  2 0 1.0000;
+  3 0 2.0000;
+  4 1 0.0000;
+  5 1 1.0000;
+  6 1 2.0000;
+  7 2 0.0000;
+  8 2 1.0000;
+  9 2 2.0000;
+</Nodes>
+
+<Elements>
+  0 1  2 3  4 5  6 7  8 9;
+</Elements>
+
+<ElementDatabase name="C">
+ <Column name = "irows" type = "int">
+  0 0 1 2 3 4 5 6 7 8 ;
+ </Column>
+ <Column name = "jcols" type = "int">
+  0 0 1 2 3 4 5 6 7 8 ;
+ </Column>
+ <Column name = "values" type = "float">
+  0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 ;
+ </Column>
+ <Column name = "weights" type = "float">
+  0 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 ;
+ </Column>
+</ElementDatabase>
+
+<NodeGroup name="gr1">
+{  1  2  3}
+</NodeGroup>
+<NodeGroup name="gr2">
+{  1  4  7}
+</NodeGroup>

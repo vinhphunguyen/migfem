@@ -1,0 +1,14 @@
+<ElementDatabase name="C">
+ <Column name = "i" type = "int">
+  0 0 1 1 2 3 4 4 5 6 7 7 8 ;
+  1 0 1 1 2 3 4 4 5 6 7 7 8 ;
+ </Column>
+ <Column name = "j" type = "int">
+  0 0 1 2 2 3 4 5 5 6 7 8 8 ;
+  1 0 0 1 2 3 3 4 5 6 6 7 8 ;
+ </Column>
+ <Column name = "v" type = "float">
+  0 1.0 1.0 0.5 0.5 1.0 1.0 0.5 0.5 1.0 1.0 0.5 0.5 ;
+  1 0.5 0.5 1.0 1.0 0.5 0.5 1.0 1.0 0.5 0.5 1.0 1.0 ;
+ </Column>
+</ElementDatabase>

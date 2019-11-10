@@ -1,0 +1,69 @@
+nurbs >> Nurbs
+Basic operations for NURBS curves, surfaces and volumes
+ nrbmak
+ nrbkntins
+ nrbdegelev
+ nrbderiv
+ nrbdeval
+ nrbeval
+Operations for constructing NURBS curves and surfaces
+ nrbtform
+ nrbreverse
+ nrbtransp
+ nrbline
+ nrbcirc
+ nrbrect
+ nrb4surf
+ nrbcylind
+ nrbextract
+ nrbextrude
+ nrbrevolve
+ nrbruled
+ nrbcoons
+ nrbplot
+ nrbctrlplot
+ nrbkntplot
+ nrbexport
+ nrbtestcrv
+ nrbtestsrf
+B-Spline functions
+ bspeval
+ bspderiv
+ bspkntins
+ bspdegelev
+ basisfun
+ basisfunder
+ findspan
+ numbasisfun
+ tbasisfun
+B-splines geometric entities
+ curvederivcpts
+ curvederiveval
+ surfderivcpts
+ surfderiveval
+NURBS geometric entities and functions
+ nrbbasisfun
+ nrbbasisfunder
+ nrbnumbasisfun
+ nrbcrvderiveval
+ nrbsurfderiveval
+Knots construction and refinement
+ kntuniform
+ kntrefine
+ kntbrkdegreg
+ kntbrkdegmult
+Vector and Transformation Utilities 
+ vecnorm
+ vecmag
+ vecmag2
+ vecangle
+ vecdot
+ veccross
+ vecrotx
+ vecroty
+ vecrotz
+ vecscale
+ vectrans
+Misc Utilities
+ deg2rad
+ rad2deg

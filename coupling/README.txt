@@ -1,0 +1,17 @@
+This folder contains the implementation of Arlequin and Nitsche method for coupling discretisations
+and models. The sub-folders are explained in what follows.
+
+1. 2D: 2D discretisations coupling
+2. 3D: 3D discretisations coupling
+3. arlequin: Arlequin implementation for 2D meshes coupling
+4. continuum-beam: 
+5. continuum-plate: 
+6. fem: solve problems solved in other folders using mono-models.
+
+For almost cases, the basis functions are either linear Lagrange basis or NURBS. For the latter, the files end with
+IGA.m. Files end with Embed.m indicate implementation using the non-conforming coupling or volume coupling or embedded
+mesh method.
+
+Vinh Phu Nguyen
+Cardiff University, Wales, UK
+July 2013

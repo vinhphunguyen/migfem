@@ -1,0 +1,18 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=mex 2011.7.3)  12 NOV 2011 06:08
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**NURBSbasis.c NURBS.c
+(./NURBSbasis.c
+This is MeX  Version 1.05  18 XII 1993  (B. Jackowski & M. Ry\'cko)
+! You can't use `macro parameter character #' in vertical mode.
+l.1 #
+     include <stdio.h>
+? ZZ
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? X
+No pages of output.

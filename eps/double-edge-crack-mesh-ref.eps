@@ -1,0 +1,1199 @@
+%!PS-Adobe-2.0 EPSF-1.2
+%%Creator: MATLAB, The MathWorks, Inc. Version 7.13.0.564 (R2011b). Operating System: Darwin 11.3.0 Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1699.24.23~1/RELEASE_X86_64 x86_64.
+%%Title: ./double-edge-crack-mesh-ref.eps
+%%CreationDate: 03/01/2012  22:35:47
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%Extensions: CMYK
+%%Pages: 1
+%%BoundingBox:   180   112   482   706
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile exch readhexstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:   180   112   482   706
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode -3996 9084 csm
+
+ 6164   604  3617  7129 MR c np
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 15360 8689 PR
+6 w
+gs 3460 652 8977 7081 MR c np
+13.2 w
+/c8 { 0.000000 0.000000 1.000000 sr} bdef
+c8
+0 399 -111 0 0 -399 111 0 6178 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 6289 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 6399 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 6510 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 6621 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 6731 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 6842 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 6952 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 7063 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 7174 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 7284 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 7395 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 7506 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 7616 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 7727 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 7837 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 7948 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 8059 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 8169 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 8280 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 8391 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 8501 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 8612 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 8722 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 8833 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 8944 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 9054 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 9165 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 9276 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 9386 7732 5 MP stroke
+0 399 -110 0 0 -399 110 0 9497 7732 5 MP stroke
+0 399 -111 0 0 -399 111 0 9607 7732 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 7333 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 7333 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 6935 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 6935 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 6537 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 6537 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 6537 5 MP stroke
+0 399 -111 0 0 -399 111 0 6178 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 6289 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 6399 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 6510 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 6621 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 6731 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 6842 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 6952 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 7063 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 7174 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 7284 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 7395 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 7506 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 7616 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 7727 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 7837 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 7948 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 8059 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 8169 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 8280 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 8391 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 8501 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 8612 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 8722 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 8833 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 8944 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 9054 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 9165 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 9276 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 9386 6139 5 MP stroke
+0 399 -110 0 0 -399 110 0 9497 6139 5 MP stroke
+0 399 -111 0 0 -399 111 0 9607 6139 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 5740 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 5740 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 5342 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 5342 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 4944 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 4944 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 4944 5 MP stroke
+0 59 -111 0 0 -59 111 0 6178 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 6289 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 6399 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 6510 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 6621 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 6731 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 6842 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 6952 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 7063 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 7174 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 7284 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 7395 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 7506 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 7616 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 7727 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 7837 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 7948 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 8059 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 8169 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 8280 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 8391 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 8501 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 8612 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 8722 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 8833 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 8944 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 9054 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 9165 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 9276 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 9386 4546 5 MP stroke
+0 59 -110 0 0 -59 110 0 9497 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 9607 4546 5 MP stroke
+0 59 -111 0 0 -59 111 0 6178 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 6289 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 6399 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 6510 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 6621 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 6731 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 6842 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 6952 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 7063 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 7174 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 7284 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 7395 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 7506 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 7616 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 7727 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 7837 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 7948 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 8059 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 8169 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 8280 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 8391 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 8501 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 8612 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 8722 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 8833 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 8944 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 9054 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 9165 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 9276 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 9386 4487 5 MP stroke
+0 59 -110 0 0 -59 110 0 9497 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 9607 4487 5 MP stroke
+0 59 -111 0 0 -59 111 0 6178 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 6289 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 6399 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 6510 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 6621 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 6731 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 6842 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 6952 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 7063 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 7174 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 7284 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 7395 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 7506 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 7616 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 7727 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 7837 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 7948 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 8059 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 8169 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 8280 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 8391 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 8501 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 8612 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 8722 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 8833 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 8944 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 9054 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 9165 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 9276 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 9386 4428 5 MP stroke
+0 59 -110 0 0 -59 110 0 9497 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 9607 4428 5 MP stroke
+0 59 -111 0 0 -59 111 0 6178 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 6289 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 6399 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 6510 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 6621 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 6731 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 6842 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 6952 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 7063 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 7174 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 7284 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 7395 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 7506 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 7616 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 7727 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 7837 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 7948 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 8059 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 8169 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 8280 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 8391 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 8501 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 8612 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 8722 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 8833 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 8944 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 9054 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 9165 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 9276 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 9386 4369 5 MP stroke
+0 59 -110 0 0 -59 110 0 9497 4369 5 MP stroke
+0 59 -111 0 0 -59 111 0 9607 4369 5 MP stroke
+0 40 -111 0 0 -40 111 0 6178 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 6289 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 6399 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 6510 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 6621 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 6731 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 6842 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 6952 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 7063 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 7174 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 7284 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 7395 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 7506 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 7616 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 7727 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 7837 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 7948 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 8059 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 8169 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 8280 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 8391 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 8501 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 8612 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 8722 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 8833 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 8944 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 9054 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 9165 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 9276 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 9386 4310 5 MP stroke
+0 40 -110 0 0 -40 110 0 9497 4310 5 MP stroke
+0 40 -111 0 0 -40 111 0 9607 4310 5 MP stroke
+0 39 -111 0 0 -39 111 0 6178 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 6289 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 6399 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 6510 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 6621 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 6731 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 6842 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 6952 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 7063 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 7174 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 7284 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 7395 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 7506 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 7616 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 7727 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 7837 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 7948 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 8059 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 8169 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 8280 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 8391 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 8501 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 8612 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 8722 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 8833 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 8944 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 9054 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 9165 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 9276 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 9386 4270 5 MP stroke
+0 39 -110 0 0 -39 110 0 9497 4270 5 MP stroke
+0 39 -111 0 0 -39 111 0 9607 4270 5 MP stroke
+0 26 -111 0 0 -26 111 0 6178 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 6289 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 6399 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 6510 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 6621 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 6731 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 6842 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 6952 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 7063 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 7174 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 7284 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 7395 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 7506 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 7616 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 7727 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 7837 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 7948 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 8059 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 8169 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 8280 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 8391 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 8501 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 8612 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 8722 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 8833 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 8944 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 9054 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 9165 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 9276 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 9386 4231 5 MP stroke
+0 26 -110 0 0 -26 110 0 9497 4231 5 MP stroke
+0 26 -111 0 0 -26 111 0 9607 4231 5 MP stroke
+0 27 -111 0 0 -27 111 0 6178 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 6289 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 6399 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 6510 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 6621 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 6731 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 6842 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 6952 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 7063 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 7174 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 7284 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 7395 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 7506 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 7616 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 7727 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 7837 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 7948 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 8059 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 8169 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 8280 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 8391 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 8501 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 8612 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 8722 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 8833 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 8944 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 9054 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 9165 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 9276 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 9386 4205 5 MP stroke
+0 27 -110 0 0 -27 110 0 9497 4205 5 MP stroke
+0 27 -111 0 0 -27 111 0 9607 4205 5 MP stroke
+0 26 -111 0 0 -26 111 0 6178 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 6289 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 6399 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 6510 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 6621 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 6731 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 6842 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 6952 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 7063 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 7174 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 7284 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 7395 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 7506 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 7616 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 7727 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 7837 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 7948 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 8059 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 8169 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 8280 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 8391 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 8501 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 8612 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 8722 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 8833 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 8944 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 9054 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 9165 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 9276 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 9386 4178 5 MP stroke
+0 26 -110 0 0 -26 110 0 9497 4178 5 MP stroke
+0 26 -111 0 0 -26 111 0 9607 4178 5 MP stroke
+0 39 -111 0 0 -39 111 0 6178 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 6289 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 6399 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 6510 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 6621 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 6731 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 6842 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 6952 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 7063 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 7174 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 7284 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 7395 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 7506 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 7616 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 7727 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 7837 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 7948 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 8059 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 8169 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 8280 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 8391 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 8501 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 8612 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 8722 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 8833 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 8944 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 9054 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 9165 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 9276 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 9386 4152 5 MP stroke
+0 39 -110 0 0 -39 110 0 9497 4152 5 MP stroke
+0 39 -111 0 0 -39 111 0 9607 4152 5 MP stroke
+0 40 -111 0 0 -40 111 0 6178 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 6289 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 6399 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 6510 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 6621 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 6731 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 6842 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 6952 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 7063 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 7174 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 7284 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 7395 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 7506 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 7616 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 7727 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 7837 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 7948 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 8059 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 8169 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 8280 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 8391 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 8501 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 8612 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 8722 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 8833 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 8944 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 9054 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 9165 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 9276 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 9386 4113 5 MP stroke
+0 40 -110 0 0 -40 110 0 9497 4113 5 MP stroke
+0 40 -111 0 0 -40 111 0 9607 4113 5 MP stroke
+0 58 -111 1 0 -59 111 0 6178 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 6289 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 6399 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 6510 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 6621 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 6731 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 6842 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 6952 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 7063 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 7174 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 7284 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 7395 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 7506 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 7616 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 7727 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 7837 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 7948 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 8059 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 8169 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 8280 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 8391 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 8501 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 8612 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 8722 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 8833 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 8944 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 9054 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 9165 4073 5 MP stroke
+0 59 -110 0 0 -59 110 0 9276 4073 5 MP stroke
+0 59 -111 0 0 -59 111 0 9386 4073 5 MP stroke
+0 59 -110 -1 0 -58 110 0 9497 4073 5 MP stroke
+0 58 -111 0 0 -58 111 0 9607 4073 5 MP stroke
+0 59 -111 1 0 -59 111 -1 6178 4015 5 MP stroke
+0 59 -110 0 0 -59 110 0 6289 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 6399 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 6510 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 6621 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 6731 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 6842 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 6952 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 7063 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 7174 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 7284 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 7395 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 7506 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 7616 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 7727 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 7837 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 7948 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 8059 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 8169 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 8280 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 8391 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 8501 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 8612 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 8722 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 8833 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 8944 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 9054 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 9165 4014 5 MP stroke
+0 59 -110 0 0 -59 110 0 9276 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 9386 4014 5 MP stroke
+0 59 -110 -1 0 -59 110 1 9497 4014 5 MP stroke
+0 59 -111 0 0 -59 111 0 9607 4015 5 MP stroke
+0 60 -111 0 0 -59 111 -1 6178 3956 5 MP stroke
+0 59 -110 0 0 -59 110 0 6289 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 6399 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 6510 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 6621 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 6731 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 6842 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 6952 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 7063 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 7174 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 7284 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 7395 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 7506 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 7616 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 7727 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 7837 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 7948 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 8059 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 8169 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 8280 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 8391 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 8501 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 8612 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 8722 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 8833 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 8944 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 9054 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 9165 3955 5 MP stroke
+0 59 -110 0 0 -59 110 0 9276 3955 5 MP stroke
+0 59 -111 0 0 -59 111 0 9386 3955 5 MP stroke
+0 59 -110 -1 0 -59 110 1 9497 3955 5 MP stroke
+0 59 -111 1 0 -60 111 0 9607 3956 5 MP stroke
+0 58 -111 1 0 -59 111 0 6178 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 6289 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 6399 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 6510 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 6621 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 6731 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 6842 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 6952 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 7063 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 7174 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 7284 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 7395 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 7506 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 7616 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 7727 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 7837 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 7948 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 8059 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 8169 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 8280 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 8391 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 8501 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 8612 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 8722 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 8833 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 8944 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 9054 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 9165 3896 5 MP stroke
+0 59 -110 0 0 -59 110 0 9276 3896 5 MP stroke
+0 59 -111 0 0 -59 111 0 9386 3896 5 MP stroke
+0 59 -110 -1 0 -59 110 1 9497 3896 5 MP stroke
+0 59 -111 0 0 -58 111 -1 9607 3897 5 MP stroke
+0 399 -111 0 0 -398 111 -1 6178 3838 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 3837 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 3837 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 3837 5 MP stroke
+0 398 -110 0 0 -399 110 1 9497 3837 5 MP stroke
+0 399 -111 0 0 -399 111 0 9607 3838 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 3439 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 3439 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 3041 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 3041 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 3041 5 MP stroke
+0 399 -111 0 0 -399 111 0 6178 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 6289 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 6399 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 6510 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 6621 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 6731 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 6842 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 6952 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 7063 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 7174 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 7284 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 7395 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 7506 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 7616 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 7727 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 7837 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 7948 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 8059 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 8169 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 8280 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 8391 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 8501 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 8612 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 8722 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 8833 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 8944 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 9054 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 9165 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 9276 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 9386 2643 5 MP stroke
+0 399 -110 0 0 -399 110 0 9497 2643 5 MP stroke
+0 399 -111 0 0 -399 111 0 9607 2643 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 2244 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 2244 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 1846 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 1846 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 1448 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 1448 5 MP stroke
+0 398 -111 0 0 -398 111 0 6178 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 6289 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 6399 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 6510 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 6621 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 6731 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 6842 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 6952 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 7063 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 7174 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 7284 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 7395 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 7506 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 7616 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 7727 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 7837 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 7948 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 8059 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 8169 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 8280 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 8391 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 8501 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 8612 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 8722 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 8833 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 8944 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 9054 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 9165 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 9276 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 9386 1050 5 MP stroke
+0 398 -110 0 0 -398 110 0 9497 1050 5 MP stroke
+0 398 -111 0 0 -398 111 0 9607 1050 5 MP stroke
+6 w
+gr
+
+c8
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF

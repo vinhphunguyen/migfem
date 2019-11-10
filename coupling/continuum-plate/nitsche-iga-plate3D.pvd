@@ -1,0 +1,6 @@
+<VTKFile byte_order="LittleEndian" type="Collection" version="0.1">
+<Collection>
+<DataSet file='nitsche-iga-plate3D-continuum.vtu' groups='' part='0' timestep='1'/>
+<DataSet file='nitsche-iga-plate3D-plate.vtu' groups='' part='0' timestep='1'/>
+</Collection>
+</VTKFile>

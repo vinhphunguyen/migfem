@@ -1,0 +1,6 @@
+<VTKFile byte_order="LittleEndian" type="Collection" version="0.1">
+<Collection>
+<DataSet file='iga-nitsche-tbeam-mesh1.vtu' groups='' part='1' timestep='1'/>
+<DataSet file='iga-nitsche-tbeam-mesh2.vtu' groups='' part='2' timestep='1'/>
+</Collection>
+</VTKFile>

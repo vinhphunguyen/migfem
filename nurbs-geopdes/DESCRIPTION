@@ -1,0 +1,14 @@
+Name: Nurbs
+Version: 1.3.5
+Date: 2011-08-26
+Author: Mark Spink, Daniel Claxton, Carlo de Falco, Rafael Vazquez
+Maintainer: Carlo de Falco and Rafael Vazquez
+Title: Nurbs.
+Description: Collection of routines for the creation, and manipulation of Non-Uniform Rational B-Splines (NURBS), based on the NURBS toolbox by Mark Spink.
+Categories: splines
+Depends: octave (>= 3.2)
+Autoload: no
+License: GPL version 2 or later
+Url: http://octave.sf.net
+SVNRelease: 8477
+
