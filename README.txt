@@ -56,9 +56,9 @@ Written by:
 
 Please cite our paper when using this package:
 
-V.P. Nguyen, R. Simpson, S. Bordas, T. Rabczuk
-"An introduction to 3D Isogeometric Analysis with Matlab(R) implementation: FEM and XFEM formulations".
-Computers and Structures, submitted.
+V.P. Nguyen,  C. Anitescu, S. Bordas, T. Rabczuk
+"Isogeometric analysis: an overview and computer implementation aspects".
+Mathematics and Computers in Simulation, 117, 89-116, 2015.
 
 Before using the M files, you should first compile some C codes implemented as MEX files.
 Open Matlab and in the command line, type the following commands (make sure your PC has C compiler
